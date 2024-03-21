@@ -1,14 +1,13 @@
-import { Flowbite } from 'flowbite-react';
 import React from 'react';
 import Topbar from './components/Topbar/Topbar';
-import Searchbar from './components/Searchbar/Searchbar';
+import Main from './components/Main.jsx/Main';
 
 function App() {
   return (
-    <Flowbite>
+    <div className="p-8 bg-black">
       <Topbar />
-      <Searchbar />
-    </Flowbite>
+      <Main />
+    </div>
   );
 }
 
