@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,mdx}'],
   darkMode: 'selector',
-  content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}',
-    'node_modules/flowbite-react/lib/esm/**/*.js',
-  ],
   theme: {
     extend: {},
     colors: {
@@ -18,11 +14,8 @@ module.exports = {
       'very-light-grey': '#F4F4F4',
       white: '#FFFFFF',
       'accent-purple': '#8F19E8',
-      purple: '#A445ED',
+      'custom-purple': '#A445ED',
       red: '#FF5252',
     },
   },
-  plugins: [
-    require('flowbite/plugin'),
-  ],
 };
