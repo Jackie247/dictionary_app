@@ -1,0 +1,43 @@
+[
+    {
+        "word": "placeholder",
+        "phonetic": "/ˈpleɪsˌhoʊldɚ/",
+        "phonetics": [
+            {
+                "text": "/ˈpleɪsˌhoʊldɚ/",
+                "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/placeholder-us.mp3",
+                "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=653277",
+                "license": {
+                    "name": "BY-SA 3.0",
+                    "url": "https://creativecommons.org/licenses/by-sa/3.0"
+                }
+            }
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definitions": [
+                    {
+                        "definition": "Something used or included temporarily or as a substitute for something that is not known or must remain generic; that which holds, denotes or reserves a place for something to come later.",
+                        "synonyms": [],
+                        "antonyms": [],
+                        "example": "This data is a placeholder, so you'll want to include the real numbers as soon as you have them."
+                    }
+                ],
+                "synonyms": [
+                    "cadigan",
+                    "kadigan",
+                    "kadigin"
+                ],
+                "antonyms": []
+            }
+        ],
+        "license": {
+            "name": "CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        "sourceUrls": [
+            "https://en.wiktionary.org/wiki/placeholder"
+        ]
+    }
+]

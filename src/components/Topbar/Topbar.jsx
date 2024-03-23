@@ -1,28 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import FontSelector from '../FontSelector/FontSelector';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 
 export default function Topbar() {
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [theme]);
-
-  const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
-
   return (
-    <div className="flex items-center dark:bg-slate-800">
-      <div className="logo flex-grow">
+    <header className="flex items-center">
+      <div className="logo-svg h-8">
         <svg
+          className="h-full w-full"
           xmlns="http://www.w3.org/2000/svg"
-          width="34"
-          height="38"
           viewBox="0 0 34 38"
         >
           <g
@@ -39,13 +25,11 @@ export default function Topbar() {
         </svg>
       </div>
 
+      <div className="flex-grow" />
+
       <FontSelector />
-      <button
-        className="bg-green-200 p-4 rounded-3xl"
-        onClick={handleThemeSwitch}
-      >
-        Dark Mode
-      </button>
-    </div>
+
+      <ThemeSwitcher />
+    </header>
   );
 }

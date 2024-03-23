@@ -6,12 +6,8 @@ export default function MeaningsSection({ dictionaryEntry }) {
   static list and wont be changed, it should be fine. */
   return (
     <div>
-      {dictionaryEntry.meanings.map((meaning, index) => (
-        <ul>
-          <li>
-            <Meaning key={index} meaning={meaning} />
-          </li>
-        </ul>
+      {dictionaryEntry?.meanings.map((meaning, index) => (
+        <Meaning meaning={meaning} />
       ))}
     </div>
   );

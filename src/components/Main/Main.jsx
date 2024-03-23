@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Searchbar from '../Searchbar/Searchbar';
 import Display from '../Display/Display';
+import placeholderJson from '../../data/placeholder.json';
 
 export default function Main() {
   const [data, setData] = useState(null);
@@ -8,9 +9,6 @@ export default function Main() {
 
   const BASE_URL = 'https://api.dictionaryapi.dev/api/v2/entries/en/';
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
   const fetchData = async () => {
     try {
       const response = await fetch(`${BASE_URL}${word}`);
@@ -26,9 +24,9 @@ export default function Main() {
   };
 
   return (
-    <div className="bg-white dark:bg-slate-800">
+    <main>
       <Searchbar fetchData={fetchData} setWord={setWord} />
-      {data && <Display wordInfo={data} word={word} />}
-    </div>
+      {data ? <Display wordInfo={data} word={word} /> : <Display wordInfo={placeholderJson} word="placeholder" />}
+    </main>
   );
 }
