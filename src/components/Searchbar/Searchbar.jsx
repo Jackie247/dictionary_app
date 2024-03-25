@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Searchbar({ setWord, fetchData }) {
   return (
-    <div className="flex justify-between bg-gray-200 dark:bg-dark-black my-4 p-2 rounded-md">
+    <div className="flex justify-between bg-gray-200 dark:bg-dark-black my-4 p-2 rounded-md sm:my-8">
       <input
         id="word-search"
         className="bg-transparent font-semibold flex-grow dark:text-white"
