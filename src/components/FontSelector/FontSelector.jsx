@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 export default function FontSelector() {
-  const fonts = ['mono', 'serif', 'sans-serif'];
-  const [font, setFont] = useState('mono');
+  const fonts = ['sans-serif', 'serif', 'mono'];
+  const [font, setFont] = useState('sans-serif');
   // const [oldFont, setOldFont] = useState('serif');
 
   const handleFontChange = (e) => {
@@ -11,7 +11,7 @@ export default function FontSelector() {
 
   const updateFont = () => {
     const root = document.getElementById('root');
-    fonts.forEach((font) => root.classList.remove(font));
+    fonts.forEach((fontOption) => root.classList.remove(fontOption));
     if (font) {
       root.classList.add(font);
     }
@@ -22,14 +22,20 @@ export default function FontSelector() {
   }, [font]);
 
   return (
-    <div className="w-16 sm:w-24">
+    <div>
       <select
         className="dark:text-white bg-inherit border-none w-full"
         onChange={handleFontChange}
+        aria-label="font selector"
       >
-        {fonts.map((font) => (
-          <option className="dark:bg-dark-black" key={font} value={font}>
-            {font.charAt(0).toUpperCase() + font.slice(1)}
+        {fonts.map((fontOption) => (
+          <option
+            className="dark:bg-dark-black"
+            key={fontOption}
+            value={fontOption}
+            aria-label={fontOption}
+          >
+            {fontOption.charAt(0).toUpperCase() + fontOption.slice(1)}
           </option>
         ))}
       </select>

@@ -6,11 +6,12 @@ export default function Searchbar({ setWord, fetchData }) {
       <input
         id="word-search"
         className="bg-transparent font-semibold flex-grow dark:text-white"
+        aria-label="Word to search"
         placeholder="Enter a word to search..."
         onChange={(e) => setWord(e.target.value)}
       />
       <div className="flex justify-center items-center ml-2">
-        <button onClick={fetchData}>
+        <button onClick={fetchData} aria-label="Search">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"

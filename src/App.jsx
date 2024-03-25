@@ -5,10 +5,11 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="p-8 h-screen bg-white dark:bg-black">
-      <Topbar />
-      <Main />
-      <Footer />
+    <div className="px-8 pt-8 min-h-screen bg-white dark:bg-black lg:text-lg">
+      <div className="sm:max-w-[640px] sm:mx-auto lg:max-w-[768px]">
+        <Topbar />
+        <Main />
+      </div>
     </div>
   );
 }

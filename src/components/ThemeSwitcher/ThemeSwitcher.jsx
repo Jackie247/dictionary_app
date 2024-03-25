@@ -17,10 +17,10 @@ export default function ThemeSwitcher() {
 
   return (
     <div className="flex items-center">
-      <button className="px-2 sm:px-4" type="button" onClick={handleThemeSwitch}>
+      <button aria-label="dark mode toggle" className="px-2 sm:px-4" type="button" onClick={handleThemeSwitch}>
         <div className="flex items-center justify-center">
           <div className="relative">
-            <input id="toggle" type="checkbox" className="sr-only" checked={theme === 'dark'} readOnly />
+            <input id="toggle" type="checkbox" className="sr-only" checked={theme === 'dark'} />
             <div className="w-8 h-4 bg-gray-400 dark:bg-purple-600 rounded-full shadow-inner transition-colors sm:h-5 sm:w-10" />
             <div className="absolute w-4 h-4 bg-white rounded-full shadow transform transition-transform dark:translate-x-4 translate-x-0 top-0 sm:h-5 sm:w-5 sm:dark:translate-x-5" />
           </div>
