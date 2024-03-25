@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Inter|Lora&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
 /* STYLING FOR BULLET POINTS */
 .custom-bullet::marker {
   color: #a445ed;
+}
+
+.mono{
+  font-family: 'Inconsolata', monospace;
+}
+
+.sans-serif{
+  font-family: 'Inter', sans-serif;
+} 
+
+.serif{
+  font-family: 'Lora','serif';
 }
