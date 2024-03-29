@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 export default function AudioPlayer({ entryData }) {
   const audioObj = entryData?.phonetics.find((obj) => obj.audio.includes('https'));
@@ -11,8 +11,13 @@ export default function AudioPlayer({ entryData }) {
   };
 
   return (
-    <div id="audio-btn" className="w-12 h-12">
-      <button type="button" onClick={playAudio} aria-label="Listen to pronounciation audio">
+    <div id="audio-btn" className="w-12 h-12 lg:w-16 lg:h-16">
+      <button
+        type="button"
+        onClick={playAudio}
+        aria-label="Listen to pronounciation audio"
+        className="hover:scale-125 transform transition duration-200 hover:bg-blue"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 75 75">
           <g fill="#A445ED" fillRule="evenodd">
             <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" />
