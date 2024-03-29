@@ -12,7 +12,7 @@ export default function Meaning({ meaning }) {
       <span className="text-grey my-4">Meaning</span>
       <ul className="list-disc pl-5 text-sm dark:text-white sm:text-md">
         {meaning.definitions.map((definition, index) => (
-          <li key={index} className="custom-bullet sm:text-md lg:text-lg">
+          <li key={index} className="custom-bullet sm:text-md lg:text-md">
             {definition.definition}
             {definition.example && (
               <span className="inline-block mt-2 italic text-grey">

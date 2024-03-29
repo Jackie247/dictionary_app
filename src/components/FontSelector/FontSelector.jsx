@@ -35,7 +35,7 @@ export default function FontSelector() {
             value={fontOption}
             aria-label={fontOption}
           >
-            {fontOption.charAt(0).toUpperCase() + fontOption.slice(1)}
+            {fontOption}
           </option>
         ))}
       </select>
