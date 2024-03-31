@@ -36,7 +36,7 @@ export default function Main() {
   }, [word]);
 
   return (
-    <main>
+    <main className="pb-8">
       <SearchForm setWord={setWord} />
       {!isLoading && fetchError && (
       <div>
