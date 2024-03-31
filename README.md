@@ -1,9 +1,10 @@
+- Live Site URL: [Link](https://jyu-dictionary.netlify.app/)
+
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -29,10 +30,6 @@ Users should be able to:
 ![](./desktop-screenshot.jpg)
 
 ![](./mobile-screenshot.jpg)
-
-### Links
-
-- Live Site URL: [Link](https://jyu-dictionary.netlify.app/)
 
 ## My process
 
