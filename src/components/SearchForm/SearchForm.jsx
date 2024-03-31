@@ -49,7 +49,7 @@ export default function SearchForm({ setWord }) {
             </svg>
           </button>
         </div>
-        <p className="text-sm text-red absolute top-32 lg:top-40">{errors.word?.message}</p>
+        <p className="text-sm text-red absolute top-32 md:top-36 lg:top-40">{errors.word?.message}</p>
       </form>
     </div>
   );
