@@ -26,11 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./desktop-screenshot.jpg)
+
+![](./mobile-screenshot.jpg)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Link](https://jyu-dictionary.netlify.app/)
 
 ## My process
 
